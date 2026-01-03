@@ -8,3 +8,163 @@ img {
   height: auto;
   display: block;
 }
+body {
+  background-color: var(--color-bg);
+}
+/* menu */
+
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: block;
+  background-color: var(--color-bg-3);
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+}
+
+nav.active .menu a {
+  font-size: 24px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-bg-3);
+  box-shadow: 0 10px 10px rgba(146, 112, 112, 0.1);
+  z-index: 10;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: var(--color-text-header-footer);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: var(--color-text);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text-header-footer);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* forside */
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 45vh;
+  background-image: url("../img/hero-img.jpg");
+  opacity: 90%;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-vektor {
+  position: absolute;
+  max-width: 300px;
+  top: 40%;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../img/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-vektor {
+    position: absolute;
+    top: 35%;
+    max-width: 900px;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* forside slut */
