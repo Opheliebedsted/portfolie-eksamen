@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  background-color: var(--color-bg);
+}
+/* forside */
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  background-image: url("../img/hero-img.jpg");
+  opacity: 90%;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-vektor {
+  position: absolute;
+  max-width: 300px;
+  top: 35%;
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../img/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-vektor {
+    position: absolute;
+    top: 30%;
+    max-width: 900px;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.projekter-forside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.projekter-forside h1 {
+  padding-top: 20px;
+}
+.projekter-forside p {
+  padding: 20px;
+}
+
+.projekter-forside a {
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-bg);
+  background-color: var(--color-button);
+  border-radius: var(--button-border-radius);
+  /* padding: 10px 100px; */
+}
+
+.om-mig-forside {
+  background-color: var(--color-bg-3);
+  padding: 2rem;
+  color: var(--color-text);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.potrætfoto-tekst h1 {
+  padding-bottom: 20px;
+}
+.potrætfoto-teks p {
+  padding-bottom: 10px;
+}
+.potrætfoto-forside {
+  object-fit: cover;
+}
+.knap-lookalike {
+  grid-column: 2;
+  text-decoration: none;
+  color: var(--color-bg);
+  background-color: var(--color-button);
+  border-radius: var(--button-border-radius);
+  padding: 10px 35px;
+}
+.knap-forside {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .projekter-forside {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .projekter-forside h1 {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+  .projekter-forside p {
+    line-height: 37px;
+    padding: 20px;
+  }
+  .projekter-forside {
+    padding-bottom: 10rem;
+  }
+  .om-mig-forside h1 {
+    padding-bottom: 3rem;
+  }
+
+  .om-mig-forside p {
+    line-height: 37px;
+  }
+  .om-mig-forside {
+    background-color: var(--color-bg-3);
+    width: 100%;
+    padding: 2rem;
+    color: var(--color-text);
+    gap: 55px;
+  }
+  .knap-forside {
+    padding-top: 3rem;
+  }
+  .knap-lookalike {
+    padding: 10px 200px;
+  }
+}
+/* forside slut */
