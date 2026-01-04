@@ -46,6 +46,7 @@ h3 {
 p {
   font-family: "nunito sans";
   font-size: var(--font-body-mb-size);
+  line-height: 2;
 }
 
 a {
