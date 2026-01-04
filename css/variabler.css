@@ -1,18 +1,17 @@
 :root {
   /* baggrundsfarver */
   --color-bg: #fdfbf0;
-  --color-bg-2: #f7acce;
-  --color-bg-3: #1c1a1a;
+  --color-bg-header-footer: #1c1a1a;
 
   /* Tekst farve*/
-  --color-text-inverted: #1c1a1a;
-  --color-text: #f7acce;
-  --color-text-header-footer: #ff2196;
+  --color-text: #1c1a1a;
+  --color-text-headline: #cb0028;
+  --color-text-header-footer: #fdfbf0;
 
   /* Fonter */
 
   /* Knap styling */
-  --color-button: #ff2196;
+  --color-button: #83001d;
   --button-border-radius: 35px;
 
   /* Font weight */
@@ -32,6 +31,7 @@ h1 {
   font-family: "nunito sans";
   font-weight: var(--font-weight-bold);
   font-size: var(--font-h2-size);
+  color: var(--color-text-headline);
 }
 h2 {
   font-family: "montserrat";
