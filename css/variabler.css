@@ -28,7 +28,7 @@
   --font-body-mb-size: 0.8rem;
 }
 h1 {
-  font-family: "nunito sans";
+  font-family: "montserrat";
   font-weight: var(--font-weight-bold);
   font-size: var(--font-h2-size);
   color: var(--color-text-headline);
@@ -55,7 +55,7 @@ a {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-family: "nunito sans";
+    font-family: "montserrat";
     font-weight: var(--font-weight-bold);
     font-size: var(--font-h1-size);
   }
@@ -74,6 +74,7 @@ a {
     font-family: "nunito sans";
     font-size: var(--font-body-size);
     font-weight: var(--font-weight-regular);
+    line-height: 37px;
   }
 
   a {

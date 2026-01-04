@@ -121,14 +121,14 @@ header {
   align-items: center;
   padding: 20px;
 }
-.footer-left {
-  padding-right: 30px;
+
+.footer-right {
+  padding-left: 10px;
 }
 .footer a {
   font-size: x-small;
   text-decoration: none;
   color: var(--color-text-header-footer);
-  /* padding: 5px; */
 }
 .footer a:hover {
   color: var(--color-text-headline);
@@ -140,11 +140,6 @@ header {
   .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-  }
-  .footer-left {
-    padding-right: 17%;
   }
   .footer a {
     font-size: medium;
