@@ -205,11 +205,15 @@ body {
 .om-mig-nav nav {
   border-bottom: solid black 2px;
   padding: 2rem 1rem;
-  display: flex;
+  /* display: flex; */
   gap: 2rem;
-  justify-content: center;
+  /* justify-content: center; */
   position: sticky;
   top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
 }
 
 .om-mig-nav a {
@@ -223,6 +227,7 @@ body {
   padding-bottom: 2rem;
 }
 .ophe-tekst h1 {
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 .ophe-tekst {
@@ -251,6 +256,24 @@ body {
 .erfaring-tekst p {
   padding-bottom: 2rem;
 }
+.informerende-tekst {
+  width: 400px;
+}
+
+.container-billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.billeder-erfaring,
+.billeder-erfaring2,
+.billeder-erfaring3 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 /* TREDJE SEKTION */
 .foerste-semester-tekst {
@@ -259,9 +282,16 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom: 4rem;
 }
+
+.foerste-semester-tekst p {
+  width: 400px;
+  padding-bottom: 1rem;
+}
+
 .foerste-semester-tekst h1 {
-  padding-top: 1rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -306,7 +336,7 @@ body {
     padding-bottom: 2rem;
   }
   .ophe-tekst {
-    width: 800px;
+    width: 700px;
   }
   #sektion1 {
     display: flex;
