@@ -208,8 +208,8 @@ body {
   /* display: flex; */
   gap: 2rem;
   /* justify-content: center; */
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
@@ -333,10 +333,14 @@ body {
   }
   .ophe-tekst h1 {
     padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
-  .ophe-tekst {
-    width: 700px;
+
+  .ophe-tekst p,
+  .informerende-tekst,
+  .foerste-semester-tekst p {
+    width: 800px;
+    text-align: center;
   }
   #sektion1 {
     display: flex;
@@ -344,9 +348,30 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 5rem;
+    border-bottom: black solid 2px;
   }
   .ophe-billede {
     height: 512px;
     width: 384px;
+  }
+
+  #sektion2 {
+    padding-bottom: 5rem;
+    border-bottom: black solid 2px;
+  }
+  .erfaring-tekst h1 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .container-billeder {
+    padding-top: 2rem;
+  }
+  #sektion3 {
+    padding-bottom: 5rem;
+  }
+  .foerste-semester-tekst h1 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 }
