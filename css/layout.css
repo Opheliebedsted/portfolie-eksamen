@@ -67,12 +67,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   border-bottom: solid black 2px;
 }
 .velkommen h2 {
-  padding-bottom: 1rem;
   color: var(--color-text-headline);
 }
 .velkommen p {
@@ -84,12 +83,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   padding-bottom: 3rem;
   border-bottom: solid black 2px;
 }
 .projekter-forside h1 {
-  padding-top: 20px;
+  padding-top: 1.5rem;
 }
 .projekter-forside p {
   padding: 20px;
@@ -108,21 +108,24 @@ body {
 .om-mig-forside {
   padding: 2rem;
   color: var(--color-text);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .potrætfoto-tekst h1 {
   padding-top: 2rem;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
-.potrætfoto-teks p {
-  padding-bottom: 10px;
+.potrætfoto-tekst p {
+  text-align: center;
 }
 .potrætfoto-forside {
-  padding-top: 3rem;
-  object-fit: cover;
+  padding-top: 1.5rem;
 }
 .knap-lookalike {
   grid-column: 2;
@@ -133,7 +136,7 @@ body {
   padding: 10px 35px;
 }
 .knap-forside {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 /* FORSIDE DESKTOP */
 @media screen and (min-width: 800px) {
@@ -373,5 +376,34 @@ body {
   .foerste-semester-tekst h1 {
     padding-top: 5rem;
     padding-bottom: 3rem;
+  }
+}
+
+/* PROJEKTER */
+.projekter-nav nav {
+  border-bottom: solid black 2px;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+.projekter-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--font-body-mb-size);
+}
+
+@media screen and (min-width: 800px) {
+  .projekter-nav nav a {
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .projekter-nav nav a:hover {
+    background-color: #d1cccb;
+  }
+  .projekter-nav a {
+    font-size: 1.5rem;
   }
 }
