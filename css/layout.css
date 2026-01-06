@@ -253,6 +253,19 @@ body {
 .ophe-billede {
   margin: 1.5rem;
 }
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.effect {
+  animation: pulse 3s ease-in-out infinite;
+}
 /* ANDEN SEKTION */
 .erfaring-tekst {
   display: flex;
@@ -364,6 +377,7 @@ body {
     border-bottom: black solid 2px;
   }
   .ophe-billede {
+    padding-top: 2rem;
     height: 512px;
     width: 384px;
   }
@@ -386,9 +400,22 @@ body {
     padding-top: 5rem;
     padding-bottom: 3rem;
   }
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  .effect {
+    animation: pulse 3s ease-in-out infinite;
+  }
 }
 
 /* PROJEKTER */
+/* HERO */
 .hero2 {
   display: flex;
   justify-content: center;
@@ -404,7 +431,7 @@ body {
   max-width: 300px;
   top: 35%;
 }
-
+/* NAV */
 .projekter-nav nav {
   border-bottom: solid black 2px;
   padding: 2rem 1rem;
@@ -420,10 +447,10 @@ body {
   font-size: var(--font-body-mb-size);
 }
 .overskrift {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
-
+/* GLOBALE ELEMENTER */
 .flex2,
 .flex3,
 .flex4,
@@ -434,7 +461,42 @@ body {
   text-align: center;
   align-items: center;
 }
+#tema2 h3,
+#tema3 h3,
+#tema4 h3,
+#tema5 h3 {
+  padding: 0.5rem 0.2rem;
+}
+.flex2 h2,
+.flex3 h2,
+.flex4 h2,
+.flex5 h2 {
+  padding-top: 2rem;
+}
+.flex2 p,
+.flex3 p,
+.flex4 p,
+.flex5 p {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  width: 300px;
+}
+/* BILLEDER GRID */
+.dokumentation-billeder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+.dokumentation-billeder img {
+  width: 150px;
+  height: 100px;
+  align-items: center;
+}
 
+/* DESKTOP */
 @media screen and (min-width: 800px) {
   .hero2 {
     width: 100%;
