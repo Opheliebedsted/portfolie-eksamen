@@ -481,18 +481,49 @@ body {
   padding-bottom: 0.5rem;
   width: 300px;
 }
+.links {
+  text-decoration: none;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animation-prototype {
+  animation: pulse 2s ease-in-out infinite;
+}
+
 /* BILLEDER GRID */
 .dokumentation-billeder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
   text-align: center;
 }
 .dokumentation-billeder img {
   width: 150px;
   height: 100px;
+  align-items: center;
+}
+
+.dokumentation-billeder2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.dokumentation-billeder2 img {
+  height: 150px;
   align-items: center;
 }
 
