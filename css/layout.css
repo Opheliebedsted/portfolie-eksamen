@@ -479,7 +479,7 @@ body {
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* BILLEDER GRID */
+/* BILLEDER FLEX/GRID */
 .dokumentation-billeder {
   display: flex;
   flex-direction: column;
@@ -523,6 +523,10 @@ body {
 
 /* DESKTOP */
 @media screen and (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .hero2 {
     width: 100%;
     height: 60vh;
@@ -550,5 +554,20 @@ body {
   }
   .projekter-nav a {
     font-size: 1.5rem;
+  }
+  .dokumentation-billeder,
+  .dokumentation-billeder2,
+  .dokumentation-billeder3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  .dokumentation-billeder img,
+  .dokumentation-billeder2 img,
+  .dokumentation-billeder3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
